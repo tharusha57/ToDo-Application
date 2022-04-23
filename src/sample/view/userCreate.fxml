@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="900.0" styleClass="bodybg" stylesheets="@../../images/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.UserCreateController">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="900.0" layoutX="8.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/Opening.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="createUsername" alignment="CENTER" focusColor="#1a65fc" layoutX="126.0" layoutY="265.0" prefHeight="53.0" prefWidth="656.0" promptText="Enter Your Username" unFocusColor="BLACK">
+         <font>
+            <Font name="Helvetica‭ ‬עבה" size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXDatePicker fx:id="createBirthDate" defaultColor="#1a65fc" layoutX="126.0" layoutY="360.0" prefHeight="53.0" prefWidth="688.0" promptText="Your Birth Date" styleClass="text" stylesheets="@../../images/style.css" />
+      <JFXButton fx:id="createUserButton" layoutX="351.0" layoutY="498.0" prefHeight="86.0" prefWidth="207.0" style="-fx-background-color: #1a65fc; -fx-background-radius: 0;" styleClass="text" stylesheets="@../../images/style.css" text="Create User" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="warningLabel" alignment="CENTER" layoutX="227.0" layoutY="209.0" prefHeight="24.0" prefWidth="454.0" text="Please fill both fields" textFill="RED" visible="false" />
+      <ImageView fx:id="createUserBackButton" fitHeight="80.0" fitWidth="89.0" layoutX="36.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" styleClass="back-button">
+         <image>
+            <Image url="@../../images/backButton.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

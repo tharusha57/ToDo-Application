@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="187.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.SelectListWarningController">
+   <children>
+      <ImageView fitHeight="187.0" fitWidth="554.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/selectList.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="selectListOkButton" layoutX="221.0" layoutY="113.0" prefHeight="41.0" prefWidth="113.0" styleClass="button-listview" stylesheets="@../../images/style.css" text="Okay" textFill="WHITE" />
+   </children>
+</AnchorPane>

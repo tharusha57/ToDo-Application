@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.TaskViewController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1207.0">
+         <image>
+            <Image url="@../../images/taskview.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="viewUserLists" fitHeight="50.0" fitWidth="50.0" layoutX="48.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/listImage.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="105.0" layoutY="388.0" prefHeight="47.0" prefWidth="163.0" styleClass="text" text="Your Lists">
+         <font>
+            <Font name="Helvetica‭ ‬עבה" size="21.0" />
+         </font>
+      </Label>
+      <JFXListView fx:id="taskItemView" layoutX="413.0" layoutY="243.0" prefHeight="469.0" prefWidth="776.0" />
+      <JFXListView fx:id="taskListView" layoutX="56.0" layoutY="453.0" prefHeight="339.0" prefWidth="348.0" />
+      <Label layoutX="497.0" layoutY="730.0" prefHeight="47.0" prefWidth="207.0" text="Add Task ">
+         <font>
+            <Font name="Helvetica" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="viewAddTask" fitHeight="37.0" fitWidth="37.0" layoutX="451.0" layoutY="735.0">
+         <image>
+            <Image url="@../../images/AddTask.png.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="731.0" layoutY="730.0" prefHeight="47.0" prefWidth="207.0" text="Add New List">
+         <font>
+            <Font name="Helvetica" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="viewAddList" fitHeight="37.0" fitWidth="37.0" layoutX="686.0" layoutY="735.0">
+         <image>
+            <Image url="@../../images/AddList.png.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="importantPane" layoutY="294.0" prefHeight="83.0" prefWidth="407.0">
+         <children>
+            <ImageView fx:id="viewImportant" fitHeight="52.0" fitWidth="50.0" layoutX="50.0" layoutY="16.0">
+               <image>
+                  <Image url="@../../images/importantImage.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="110.0" layoutY="19.0" prefHeight="47.0" prefWidth="230.0" styleClass="text" text="High Tasks">
+               <font>
+                  <Font name="Helvetica‭ ‬עבה" size="21.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Label fx:id="viewCurrentList" layoutX="571.0" layoutY="192.0" prefHeight="24.0" prefWidth="179.0" text="Current List ">
+         <font>
+            <Font name="Helvetica‭ ‬עבה" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="viewTaskdate" layoutX="48.0" layoutY="231.0" prefHeight="52.0" prefWidth="348.0" text="Today">
+         <font>
+            <Font name="Helvetica‭ ‬עבה" size="44.0" />
+         </font>
+      </Label>
+      <Label fx:id="viewUserName" layoutX="592.0" layoutY="38.0" prefHeight="60.0" prefWidth="586.0" text="Name" textFill="#f3a953">
+         <font>
+            <Font name="Helvetica" size="50.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="viewGoBackButton" fitHeight="59.0" fitWidth="59.0" layoutX="1130.0" layoutY="724.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/backButton.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

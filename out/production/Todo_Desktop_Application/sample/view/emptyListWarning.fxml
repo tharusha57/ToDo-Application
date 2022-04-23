@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="187.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.EmptyListWarningController">
+   <children>
+      <ImageView fitHeight="187.0" fitWidth="554.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/emptyListWarning.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="emptyListOkButton" layoutX="220.0" layoutY="113.0" prefHeight="47.0" prefWidth="115.0" styleClass="button-listview" stylesheets="@../../images/style.css" text="Okay" textFill="WHITE" />
+   </children>
+</AnchorPane>

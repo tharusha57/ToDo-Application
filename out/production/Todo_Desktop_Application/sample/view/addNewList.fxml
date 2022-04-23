@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AddNewListController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/addList.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="listName" alignment="CENTER" focusColor="#1a65fc" layoutX="120.0" layoutY="158.0" prefHeight="38.0" prefWidth="364.0" promptText="List name">
+         <font>
+            <Font name="Helvetica" size="18.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="listCreateButton" layoutX="206.0" layoutY="257.0" prefHeight="74.0" prefWidth="192.0" styleClass="button-listview" stylesheets="@../../images/style.css" text="Create List" textFill="WHITE" />
+   </children>
+</AnchorPane>

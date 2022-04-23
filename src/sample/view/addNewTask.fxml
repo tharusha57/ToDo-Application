@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AddNewTaskController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1200.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/addTaskScreen.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="addTaskName" alignment="CENTER" focusColor="#1a65fc" layoutX="147.0" layoutY="178.0" prefHeight="62.0" prefWidth="906.0" promptText="Task Name">
+         <font>
+            <Font name="Helvetica" size="18.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="addTaskDescription" alignment="CENTER" focusColor="#1a65fc" layoutX="147.0" layoutY="272.0" prefHeight="62.0" prefWidth="906.0" promptText="Task Description">
+         <font>
+            <Font name="Helvetica" size="18.0" />
+         </font></JFXTextField>
+      <JFXCheckBox fx:id="highPick" checkedColor="RED" layoutX="766.0" layoutY="411.0" text="High" textFill="#666666" unCheckedColor="#1a65fc">
+         <font>
+            <Font name="Helvetica" size="18.0" />
+         </font></JFXCheckBox>
+      <JFXCheckBox fx:id="midPick" checkedColor="#ddff00" layoutX="676.0" layoutY="411.0" text="Mid" textFill="#666666" unCheckedColor="#1a65fc">
+         <font>
+            <Font name="Helvetica" size="18.0" />
+         </font></JFXCheckBox>
+      <JFXCheckBox fx:id="lowPick" checkedColor="#00ff09" layoutX="573.0" layoutY="411.0" text="Low" textFill="#666666" unCheckedColor="#1a65fc">
+         <font>
+            <Font name="Helvetica" size="18.0" />
+         </font></JFXCheckBox>
+      <JFXButton fx:id="taskSaveButton" layoutX="488.0" layoutY="650.0" prefHeight="82.0" prefWidth="217.0" styleClass="button-listview" stylesheets="@../../images/style.css" text="Save" textFill="WHITE" />
+      <JFXDatePicker fx:id="taskDateBefore" defaultColor="#1a65fc" layoutX="441.0" layoutY="496.0" />
+      <Label layoutX="309.0" layoutY="501.0" text="Finish Before  -" textFill="#666666">
+         <font>
+            <Font name="Helvetica" size="18.0" />
+         </font></Label>
+      <JFXTimePicker fx:id="taskTimeBefore" defaultColor="#1a65fc" layoutX="686.0" layoutY="496.0" />
+      <Label fx:id="addTaskWarning" alignment="CENTER" layoutX="417.0" layoutY="74.0" prefHeight="21.0" prefWidth="435.0" text="Please Fill all the fields" textFill="RED" visible="false" />
+      <Label layoutX="327.0" layoutY="411.0" prefHeight="21.0" prefWidth="244.0" text="How important is the task - " textFill="#666666">
+         <font>
+            <Font name="Helvetica" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="taskBackButton" fitHeight="93.0" fitWidth="99.0" layoutX="147.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/backButton.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

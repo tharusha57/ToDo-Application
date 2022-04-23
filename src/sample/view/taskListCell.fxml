@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="taskListPane" prefHeight="186.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="194.0" fitWidth="740.0" layoutX="-8.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/taskListCell.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="taskName" layoutX="51.0" layoutY="4.0" prefHeight="41.0" prefWidth="584.0" text="Label">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label fx:id="taskDescription" layoutX="52.0" layoutY="45.0" prefHeight="41.0" prefWidth="591.0" text="Label">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label fx:id="dateBefore" layoutX="191.0" layoutY="131.0" prefHeight="41.0" prefWidth="119.0" text="Label">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label fx:id="dateAfter" layoutX="520.0" layoutY="131.0" prefHeight="41.0" prefWidth="193.0" text="Label">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label fx:id="taskPriority" layoutX="126.0" layoutY="111.0" prefHeight="21.0" prefWidth="131.0" text="Label">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <ImageView fx:id="taskDeleteButton" accessibleHelp="Delete Task" accessibleText="Delete Task" fitHeight="41.0" fitWidth="47.0" layoutX="669.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/deleteTask.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="taskUpdateButton" fitHeight="41.0" fitWidth="41.0" layoutX="610.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/taskUpdate.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="timeBefore" layoutX="298.0" layoutY="131.0" prefHeight="41.0" prefWidth="84.0" text="Label">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="taskLowIcon" fitHeight="19.0" fitWidth="18.0" layoutX="91.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../images/Low.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="taskMidIcon" fitHeight="18.0" fitWidth="18.0" layoutX="91.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../images/Mid.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="taskHighIcon" fitHeight="19.0" fitWidth="18.0" layoutX="91.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../images/high.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
