@@ -31,9 +31,6 @@ public class DatabaseHandler extends Config{
         preparedStatement.executeUpdate();
 
     }
-    /*public ResultSet getUser(){
-        String query = "SELECT * FROM " + Const.USER_TABLE +  "WHERE " + Const.USER_NAME
-    }*/
     public ResultSet getNumberOfUsers() throws SQLException, ClassNotFoundException {
         String query = " SELECT * FROM " + Const.USER_TABLE;
 
@@ -54,17 +51,6 @@ public class DatabaseHandler extends Config{
         return resultSet;
 
     }
-//    public void createUser(User user) throws SQLException, ClassNotFoundException {
-//        String insert = "INSERT INTO " + Const.USER_TABLE + "(" + Const.USER_NAME + ","+ Const.USER_BIRTHDATE+")"+ "VALUES(?,?)";
-//
-//        PreparedStatement preparedStatement = getDbConnection().prepareStatement(insert);
-//
-//        preparedStatement.setString(1, user.getUsername());
-//        preparedStatement.setDate(2, user.getBirthdate());
-//
-//        preparedStatement.executeUpdate();
-//
-//    }
     public void createUserList(UserList userList) throws SQLException, ClassNotFoundException {
         String query = "INSERT INTO " + Const.LIST_TABLE  + "(" + Const.USER_ID+ "," + Const.USER_LIST_NAME + ")VALUES(?,?)";
 
@@ -130,7 +116,6 @@ public class DatabaseHandler extends Config{
             PreparedStatement preparedStatement = getDbConnection().prepareStatement(query3);
 
             preparedStatement.executeUpdate();
-            //preparedStatement.close();
         }
 
         String query2 = " DELETE FROM " + Const.LIST_TABLE + " WHERE " + Const.USER_ID + "=" + userId;
@@ -181,27 +166,6 @@ public class DatabaseHandler extends Config{
         preparedStatement.executeUpdate();
         preparedStatement.close();
 
-//        ResultSet resultSet = getListItems(userListID);
-//
-//        while(resultSet.next()){
-//            String query3 = " DELETE FROM " + Const.TASK_TABLE + " WHERE " + Const.USER_LIST_ID + "=" + resultSet.getInt("userlistid");
-//            PreparedStatement preparedStatement = getDbConnection().prepareStatement(query3);
-//
-//            preparedStatement.executeUpdate();
-//            //preparedStatement.close();
-//        }
-//
-//        String query2 = " DELETE FROM " + Const.LIST_TABLE + " WHERE " + Const.USER_ID + "=" + userListID;
-//        String query = " DELETE FROM " + Const.USER_TABLE + " WHERE " + Const.USER_ID+ "=" + userListID;
-//
-//        PreparedStatement preparedStatement = getDbConnection().prepareStatement(query2);
-//        PreparedStatement preparedStatement1 = getDbConnection().prepareStatement(query);
-//
-//        preparedStatement.executeUpdate();
-//        preparedStatement.close();
-//
-//        preparedStatement1.executeUpdate();
-//        preparedStatement1.close();
     }
 
 
